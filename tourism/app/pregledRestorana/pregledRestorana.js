@@ -65,24 +65,31 @@ function createProductRows(jela){
     }
 }
 function displayProductDetails(jelo) {
+    let detalji = document.querySelector(".prikazDetalji")
+    detalji.style.border="1px solid black"
+    let tabela = document.querySelector("#prikaziDetalje");
+    tabela.innerHTML = ''; 
+
+    let trNaziv = document.createElement("tr");
+    let tdNaziv = document.createElement("td");
+    tdNaziv.textContent = "Naziv: " + jelo.naziv;
+    trNaziv.appendChild(tdNaziv);
+    tabela.appendChild(trNaziv);
+
+    let trTip = document.createElement("tr");
+    let tdTip = document.createElement("td");
+    tdTip.textContent = "Tip: " + jelo.tip;
+    trTip.appendChild(tdTip);
+    tabela.appendChild(trTip);
+
+    let trOpis = document.createElement("tr");
+    let tdOpis = document.createElement("td");
+    tdOpis.textContent = "Opis: " + jelo.opis;
+    trOpis.appendChild(tdOpis);
+    tabela.appendChild(trOpis);
     
-        let tabela = document.querySelector("#prikaziDetalje") 
-        let tr = document.createElement("tr")
-    
-        
-        let naziv= document.createElement("td") 
-        let tip= document.createElement("td") 
-        let opis= document.createElement("td") 
-        
-        naziv.textContent = "Naziv: " + jelo.naziv
-        tip.textContent = "Tip: " + jelo.tip 
-        opis.textContent = "Opis: " + jelo.opis 
-        
-        tr.appendChild(naziv)
-        tr.appendChild(tip)
-        tr.appendChild(opis)
-        tabela.appendChild(tr)
 }
+
 
 function saveLocalStorage(jela){
     let jelaJSON =JSON.stringify(jela)

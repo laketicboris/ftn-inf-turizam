@@ -1,8 +1,8 @@
-body{
+section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    .prodavnica{
+    .restoran{
         display: block;
         width: 100%;
         .prikaz{
@@ -18,35 +18,30 @@ body{
             }   
             
         } 
-        .form{
-            display: inline-block;
-            vertical-align: top;
-            border: 1px solid black;
-            margin: 20px;
-            width: 400px;
-            padding: 10px;
-            input{
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-            #dodajBtn{
-            }
+    }    
+    .form{
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid black;
+        margin: 20px;
+        width: 400px;
+        padding: 10px;
+        input{
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
-        .prikazDetalji{
-            display: block;
-            margin: 20px;
-            width: 400px;
-            padding: 10px;
-            border: 1px solid black;
-            vertical-align:top;
-            table{
-                border: none;
-                border-collapse: collapse;
-                td{
-                    border: none !important;
-                }
+    }
+    .prikazDetalji{
+        display: block;
+        margin: 20px;
+        width: 400px;
+        padding: 10px;
+        table{
+            border: none;
+            border-collapse: collapse;
+            td{
+                border: none !important;
             }
         }
     }
-    
 }

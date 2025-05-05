@@ -1,25 +1,25 @@
-body {
+section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-body .prodavnica {
+section .restoran {
   display: block;
   width: 100%;
 }
-body .prodavnica .prikaz {
+section .restoran .prikaz {
   display: inline-block;
   vertical-align: top;
   margin: 20px;
   width: 400px;
 }
-body .prodavnica .prikaz table {
+section .restoran .prikaz table {
   width: 100%;
 }
-body .prodavnica .prikaz table td {
+section .restoran .prikaz table td {
   padding: 5px 30px 5px 30px;
 }
-body .prodavnica .form {
+section .form {
   display: inline-block;
   vertical-align: top;
   border: 1px solid black;
@@ -27,23 +27,21 @@ body .prodavnica .form {
   width: 400px;
   padding: 10px;
 }
-body .prodavnica .form input {
+section .form input {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-body .prodavnica .prikazDetalji {
+section .prikazDetalji {
   display: block;
   margin: 20px;
   width: 400px;
   padding: 10px;
-  border: 1px solid black;
-  vertical-align: top;
 }
-body .prodavnica .prikazDetalji table {
+section .prikazDetalji table {
   border: none;
   border-collapse: collapse;
 }
-body .prodavnica .prikazDetalji table td {
+section .prikazDetalji table td {
   border: none !important;
 }
 
