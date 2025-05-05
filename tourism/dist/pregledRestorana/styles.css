@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+body .prodavnica {
+  display: block;
+  width: 100%;
+}
+body .prodavnica .prikaz {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  width: 400px;
+}
+body .prodavnica .prikaz table {
+  width: 100%;
+}
+body .prodavnica .prikaz table td {
+  padding: 5px 30px 5px 30px;
+}
+body .prodavnica .form {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid black;
+  margin: 20px;
+  width: 400px;
+  padding: 10px;
+}
+body .prodavnica .form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .prodavnica .prikazDetalji {
+  display: block;
+  margin: 20px;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid black;
+  vertical-align: top;
+}
+body .prodavnica .prikazDetalji table {
+  border: none;
+  border-collapse: collapse;
+}
+body .prodavnica .prikazDetalji table td {
+  border: none !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

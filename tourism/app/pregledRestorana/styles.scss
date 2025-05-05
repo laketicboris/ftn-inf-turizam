@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .prodavnica{
+        display: block;
+        width: 100%;
+        .prikaz{
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            width: 400px;
+            table{
+                width: 100%;
+                td{
+                    padding: 5px 30px 5px 30px;
+                }
+            }   
+            
+        } 
+        .form{
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid black;
+            margin: 20px;
+            width: 400px;
+            padding: 10px;
+            input{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #dodajBtn{
+            }
+        }
+        .prikazDetalji{
+            display: block;
+            margin: 20px;
+            width: 400px;
+            padding: 10px;
+            border: 1px solid black;
+            vertical-align:top;
+            table{
+                border: none;
+                border-collapse: collapse;
+                td{
+                    border: none !important;
+                }
+            }
+        }
+    }
+    
+}

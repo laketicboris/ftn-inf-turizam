@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourApp</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="title">TourApp</h1>
+        <ul class="nav-links">
+            <li><a href="contact/contact.html">Kontakt</a></li>
+            <li><a href="#">Ture</a></li>
+            <li><a href="#">Restorani</a></li>
+        </ul>
+    </nav>
+
+    <section class="site-description">
+        <h2 class="naslov">
+            Pregled restorana
+        </h2>
+        <hr>
+        <div class="restoran">
+            <div class="prikaz">
+                <table id="jela">
+                    <thead>
+                        <tr>
+                            <th>
+                                Naziv
+                            </th>
+                            <th>
+                                Kuhinja
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-jela">
+    
+                    </tbody>
+                    <tr>
+                        
+                    </tr>
+                </table>
+    
+            </div>
+            <div class="form">
+                <form id="forma">
+                    <label for="naziv">Naziv:</label>
+                    <input type="text" id="naziv" name="naziv" required>
+                    <br>
+                    <label for="opis">Opis:</label>
+                    <input type="Textarea" id="opis" name="opis" required>
+                    <br>
+                    <label for="tip">Naziv:</label>
+                    <input type="text" id="tip" name="tip" required>
+                    <br>
+                    <hr>
+                    <p>Kuhinja</p>
+                    <label for="tipKuhinje">Kineska</label><br>
+                    <input type="checkbox" id="tipKuhinje" name="kineska" value="">
+                    <label for="tipKuhinje">Kineska</label><br>
+                    <input type="checkbox" id="tipKuhinje" name="azijska" value="">
+                    
+                    
+
+
+                    <hr>
+                    <button type="button" id="dodajTip">+</button>
+                    <button type="button" id="dodajBtn">Dodaj</button>
+                </form>
+    
+            </div>
+            <div class="prikazDetalji">
+                <table id="prikaziDetalje">
+                    
+                </table>
+    
+            </div>
+        </div>
+    </section>
+    <script src="pregledRestorana.js"></script>
+</body>
+</html>
