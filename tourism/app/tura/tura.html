@@ -17,8 +17,32 @@
 
   <section>
     <h2>Ture</h2>
-    <div id="tura-lista"></div>
-    <div id="tura-detalji"></div>
+    <div id="tura-lista" class="tura-grid"></div>
+    <div id="tura-detalji" class="tura-detalji"></div>
+  </section>
+  <section>
+    <h2>Dodaj novu turu</h2>
+    <form id="forma" class="forma-tura">
+      
+      <label for="naziv">Naziv ture:</label>
+      <input type="text" name="naziv" required>
+      
+      <label for="duzina">Duzina (km):</label>
+      <input type="number" name="duzina" required>
+      
+      <label for="opis">Opis ture:</label>
+      <textarea name="opis" required></textarea>
+      
+      <div class="tag-container" id="tagContainer">
+        <label>Tagovi (npr: gradska, istorijska):</label>
+        <div class="tag-unos">
+          <input type="text" name="tagovi" placeholder="Unesite tag">
+          <button type="button" onclick="dodajTagPolje()">+</button>
+        </div>
+      </div>
+      
+      <button type="submit">Dodaj turu</button>
+    </form>
   </section>
 
   <script src="tura.js"></script>
