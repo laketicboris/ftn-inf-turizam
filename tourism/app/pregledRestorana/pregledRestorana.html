@@ -11,8 +11,8 @@
     <nav class="navbar">
         <h1 class="title">TourApp</h1>
         <ul class="nav-links">
-            <li><a href="contact/contact.html">Kontakt</a></li>
-            <li><a href="#">Ture</a></li>
+            <li><a href="../contact/contact.html">Kontakt</a></li>
+            <li><a href="../tura/tura.html">Ture</a></li>
             <li><a href="#">Restorani</a></li>
         </ul>
     </nav>
@@ -24,7 +24,7 @@
         <hr>
         <div class="restoran">
             <div class="prikaz">
-                <table id="jela">
+                <table id="restoran">
                     <thead>
                         <tr>
                             <th>
@@ -36,7 +36,7 @@
                             
                         </tr>
                     </thead>
-                    <tbody id="tbody-jela">
+                    <tbody id="tbody-restorani">
     
                     </tbody>
                     <tr>
@@ -45,7 +45,31 @@
                 </table>
     
             </div>
-            
+            <div class="form">
+                <form id="forma">
+                    <label for="naziv">Naziv:</label>
+                    <input type="text" id="naziv" name="naziv" required>
+                    <br>
+                    <label for="opis">Opis:</label>
+                    <input type="Textarea" id="opis" name="opis" required>
+                    
+                    <br>
+                    <hr>
+                    <p>Kuhinja</p>
+                    <div id="checkBoxContainer">
+
+                    </div>
+                    <hr>
+                    <div class="buttons">
+                        <button type="button" id="dodajTip">+</button>
+                        <input type="text" id="tipForma" name="tipForma" required>
+                        <button type="button" id="dodajTipBtn">+ Tip</button>
+                        <button type="button" id="dodajBtn">Dodaj</button>
+                    </div>
+                    
+                    
+                </form>
+            </div>
             <div class="prikazDetalji">
                 <table id="prikaziDetalje">
                     

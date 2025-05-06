@@ -3,6 +3,9 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
 }
+section h2 {
+  padding: 20px 0px 20px 0px;
+}
 section .restoran {
   display: block;
   width: 100%;
@@ -27,9 +30,46 @@ section .form {
   width: 400px;
   padding: 10px;
 }
+section .form #checkBoxContainer {
+  padding: 5px;
+}
+section .form #checkBoxContainer label {
+  display: inline-block;
+  width: 100px;
+}
+section .form #checkBoxContainer input {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+section .form .buttons {
+  width: 100%;
+}
+section .form .buttons input {
+  display: inline-block;
+  margin-left: 20px !important;
+}
+section .form .buttons button {
+  display: inline-block;
+  margin-left: 10px !important;
+}
+section .form .buttons #dodajTipBtn {
+  visibility: hidden;
+  margin-left: 0px;
+}
 section .form input {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+section .form #tipForma {
+  visibility: hidden;
+  border: 1px solid black;
+  margin: 5px;
+  width: 50%;
+  padding: 1px;
 }
 section .prikazDetalji {
   display: block;
